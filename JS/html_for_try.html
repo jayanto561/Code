@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button ondblclick="change(this, 'red')">Button 1</button>
+    <button ondblclick="cha(this, 'blue')">Button 2</button>
+    <button ondblclick="changeBtn(this)">Button 3</button>
+
+    <p id="msg"></p>
+
+    <script>
+      function change(btn, color) {
+        btn.style.backgroundColor = color;
+        document.getElementById("msg").innerText = "Good Job!";
+      }
+
+      function cha(btn, color) {
+        btn.style.backgroundColor = color;
+        document.getElementById("msg").innerText = "Good " + color + "!";
+    </script>
+  </body>
+</html>
