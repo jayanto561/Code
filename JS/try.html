@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Button Double Click</title>
+  </head>
+  <body>
+    <button onmouseover="changeBtn(this)">Button 1</button>
+    <button onclick="changeBtn(this)">Button 2</button>
+    <button onclick="changeBtn(this)">Button 3</button>
+
+    <p id="msg"></p>
+
+    <script>
+      function changeBtn(btn) {
+        btn.style.backgroundColor = "blue";
+        btn.style.color = "white";
+
+        document.getElementById("msg").innerHTML =
+          btn.innerHTML + " clicked! Good Job!";
+      }
+    </script>
+  </body>
+</html>
