@@ -1,5 +1,5 @@
 class Student:
     name="Jayanto"
 
-s1=student()
-print(s1);
+s1=Student()
+print(s1.name)
