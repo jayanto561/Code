@@ -1,0 +1,5 @@
+Class Student:
+    name="Jayanto"
+
+s1=student()
+print(s1);
