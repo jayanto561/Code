@@ -25,3 +25,4 @@ cat(median_age)
 
 df2$Age[is.na(df2$Age)]<-median_age
 print(df2)
+
