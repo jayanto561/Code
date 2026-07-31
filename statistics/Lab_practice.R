@@ -1,7 +1,7 @@
 #=================================================
 #               Grading system                      
 #=================================================
-marks <-25
+show_result <-function(marks){
 
 if (marks < 0 || marks > 100) {
   print("Invalid marks")
@@ -24,12 +24,14 @@ if (marks < 0 || marks > 100) {
 } else {
   print("Fail")
 }
+}
+show_result(44)
 #=================================================
 #               convert temp                      
 #=================================================
 tempconvert<-function(c){
   f<-(c*9/5)+32
-  paste("Fahrenheit",f)
+  cat("Fahrenheit",f)
   }
 tempconvert(66)
 
@@ -78,10 +80,10 @@ vot <-function(a,c){
   if(a>=18&&c=="bd"){
     print("can vote")
   }else{
-     print("can vote") 
+     print("can not vote") 
     }
 }
-vot(22,"bd")
+vot(22,"i")
 
 #=================================================
 #               Prime                      
@@ -101,7 +103,7 @@ is_prime <- function(n) {
   return("Prime")
 }
 
-print(is_prime(7))
+print(is_prime(3))
 print(is_prime(10))
 
 #=================================================
@@ -162,7 +164,7 @@ bmi <- function(w,h){
     print("Obese")
   }
 }
-bmi(100,1.76784)
+bmi(,1.594)
 
 #=================================================
 #                 Area of Circle                  
@@ -227,12 +229,16 @@ print(sum)
 
 
 x<-10
-for(i in 1:4){
-  x<-x+i
-}
+
 if(x>20){
   x<-x/2
 }else{
   x<-x*2
 }
 print(x)
+
+
+for{
+  print(i)
+}
+
