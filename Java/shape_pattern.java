@@ -11,5 +11,6 @@ public class shape_pattern {
                  System.out.println();          
                 }
         }
+        
     }
 
